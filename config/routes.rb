@@ -19,6 +19,8 @@ CatsInc::Application.routes.draw do
  # Named route 
   get "/stockalerts/:id", to: "stock_alerts#show", as: :stock_alert 
   post "/stockalerts/", to: "stock_alerts#create"
-
+  
+  post "/purchases", to: "purchases#create", as: :item 
+  
   get "/admin/dashboard", to: "admin/dashboard#index" 
 end
