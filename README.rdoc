@@ -1,0 +1,13 @@
+== Cats, Inc
+
+For all your purchase needs. Built buy cats.
+
+== Purpose
+
+Unfortunatly cats aren't very good web developers, so this app doesn't work.
+
+It's missing all the routes definitions to make it work right!
+
+Add them in to routes.rb so that all the tests pass and the site is useable.
+
+Bonus: once you've got all the tests passing, whittle down your routes defintions so you only define the minimum number you need.
