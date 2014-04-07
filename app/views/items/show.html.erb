@@ -1,0 +1,24 @@
+
+<p>
+  <strong>Name:</strong>
+  <%= @item.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @item.price %>
+</p>
+
+<p>
+  <strong>Amount in stock:</strong>
+  <%= @item.amount_in_stock %>
+</p>
+
+<%= link_to 'Back', items_path %>
+<% if @item.amount_in_stock > 0 %>
+  <%= button_to 'Buy now', item_purchases_path(@item) %>
+<% else %>
+  <%= button_to 'Create stock alert', item_stock_alerts_path(@item) %>
+<% end %>
+
+

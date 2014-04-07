@@ -1,0 +1,8 @@
+
+<p>
+  <strong>Item:</strong>
+  <%= @stock_alert.item.name %>
+</p>
+
+<%= link_to 'Remove', @stock_alert, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'Back', item_path(@stock_alert.item) %>

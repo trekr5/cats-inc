@@ -1,0 +1,9 @@
+<h1>Cat,s Inc</h1>
+<p>Buy stuff!</p>
+
+<h2>Popular items</h2>
+<ul>
+  <% @items.each do |item| %>
+    <li><%= link_to item.name, item %></li>
+  <% end %>
+</ul>

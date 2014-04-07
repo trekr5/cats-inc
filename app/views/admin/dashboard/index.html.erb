@@ -1,0 +1,23 @@
+<h1>Admin view</h1>
+
+<h2>Recent Purchases</h2>
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Item</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @recent_purchases.each do |purchase| %>
+      <tr>
+        <td><%= purchase.user_id %></td>
+        <td><%= purchase.item_id %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

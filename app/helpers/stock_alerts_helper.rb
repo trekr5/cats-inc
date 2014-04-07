@@ -1,0 +1,2 @@
+module StockAlertsHelper
+end
